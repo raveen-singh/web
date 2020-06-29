@@ -2,9 +2,11 @@
   "name": "usober",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@google-cloud/automl": "^2.1.0",
     "antd": "^3.10.3",
+    "axios": "^0.19.2",
     "fs": "^0.0.1-security",
     "gh-pages": "^2.0.1",
     "google-auth-library": "^6.0.2",

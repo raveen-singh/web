@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './SelfieClassifier.css'
 import Camera from 'react-html5-camera-photo';
-
+import axios from "axios";
 import 'react-html5-camera-photo/build/css/index.css';
 
 
@@ -30,10 +30,17 @@ export class SelfieClassifier extends React.Component {
   }
   onTakePhoto = async (dataUri) => {
     this.toggleCamera()
-    console.log(dataUri)
+    //  console.log(dataUri)
     this.setState({ image: dataUri })
     this.props.addSelfie(dataUri)
-
+    const result = await axios({
+      method: 'post',
+      url: "/score",
+      data: {
+        uri: dataUri
+      }
+    });
+    console.log(result);
   }
 }
 
