@@ -50,11 +50,18 @@ async function grab(content) {
         console.log(`Predicted class name: ${result.displayName}`);
         console.log(`Predicted class score: ${result.classification.score}`);
     });
+    console.log(response);
+    return response.payload;
+
 }
 
 
 
 app.post("/score", function (req, res) {
-    grab(req.body.uri.slice(22));
-    res.send(200);
+    (async function () {
+        const val = await grab(req.body.uri.slice(22));
+        console.log(val);
+        res.send(val);
+    })();
+
 });

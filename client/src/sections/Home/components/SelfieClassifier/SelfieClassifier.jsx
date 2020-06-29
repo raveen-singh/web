@@ -40,7 +40,10 @@ export class SelfieClassifier extends React.Component {
         uri: dataUri
       }
     });
-    console.log(result);
+    console.log(result.data[0].classification.score);
+    if (result.status == 200) {
+      this.props.addScore(result.data[0].classification.score);
+    }
   }
 }
 
