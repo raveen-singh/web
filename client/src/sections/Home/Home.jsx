@@ -11,7 +11,7 @@ export class Home extends React.Component {
     reactionData: [],
     balanceData: [],
     isBalanceDone: false,
-    score: null
+    score: 30
   }
 
   render() {
@@ -31,7 +31,7 @@ export class Home extends React.Component {
         curr = <BalanceTest data={balanceData} addData={this.addBalance} toggleDone={this.toggleBalanceDone} />
         break
       case 5:
-        curr = <Results reactionData={this.state.reactionData} balanceData={this.state.balanceData} />
+        curr = <Results reactionData={this.state.reactionData} balanceData={this.state.balanceData} score={this.state.score} />
         break
       default:
         curr = null
