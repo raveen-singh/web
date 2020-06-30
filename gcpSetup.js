@@ -1,2 +1,2 @@
 var fs = require("fs");
-fs.writeFile(process.env.GCP_KEY_FILE, process.env.GOOGLE_CONFIG, (err) => {});
+fs.writeFile(process.env.GOOGLE_APPLICATION_CREDENTIALS, process.env.GOOGLE_CONFIG, (err) => {});
