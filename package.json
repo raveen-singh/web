@@ -12,6 +12,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
+    "preinstall": "node gcpSetup.js",
     "start": "node server.js",
     "heroku-postbuild": "cd client && yarn && yarn run build"
   }
