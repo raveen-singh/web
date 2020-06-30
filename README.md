@@ -3,10 +3,14 @@
 On average, two in three people will be involved in a drunk driving crash in their lifetime([src](https://www.madd.org/statistics/)). For this reason we decided to try and increase visibility of cognitive impairment and use the technology in our pocket to empower change.
 
 The goal is to create a Progressive Web Application capable of completing a 3 stage sobriety equivalency using the inputs on a modern smart phone. To accomplish this we used ReactJs to build a dynamic front end and a serverless backend to manage machine learning driven image processing to identify facial markers corelated with cognitive imparment.
+<br/>
 
-The result of this project was a overwhelming success considering we were only given 36 hours. The 3 stages involve a balance test, reaction time test, and using a ML Model on Googles ML engine to identify facial indicators.
+<img src='https://i.ibb.co/k3kBTb1/Screen-Shot-2020-06-29-at-9-43-58-PM-2.png' />
 
 <br/>
+<br/>
+The result of this project was a overwhelming success considering we were only given 36 hours. The 3 stages involve a balance test, reaction time test, and using a ML Model on Googles ML engine to identify facial indicators.
+
 <br/>
 <br/>
 
@@ -35,4 +39,4 @@ The combination of the results from each of the 3 stages of the test is a weight
 - Bryen Xie
 
 
-This is created as a Hackathon project at ECHacks 2018. The app will be available at https://usober.github.io/web .
+This is created as a Hackathon project at ECHacks 2018. The app will be available at [https://usober.herokuapp.com/](https://usober.herokuapp.com/).
