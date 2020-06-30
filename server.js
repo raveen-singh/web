@@ -15,9 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/client/build/index.html'));
-});
+
 
 const projectId = 'usober-221401';
 const computeRegion = 'us-central1';
@@ -70,4 +68,8 @@ app.post("/score", function (req, res) {
         res.send(val);
     })();
 
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
