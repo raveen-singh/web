@@ -37,7 +37,7 @@ if (scoreThreshold) {
 // Set the payload by giving the content and type of the file.
 
 
-// params is additional domain-specific parameters.
+//  params is additional domain-specific parameters.
 // currently there is no additional parameters supported.
 async function grab(content) {
     const payload = {};
